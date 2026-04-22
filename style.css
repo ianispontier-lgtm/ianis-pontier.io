@@ -47,3 +47,76 @@ a { color: var(--main-blue); text-decoration: none; }
 p {
     text-align: justify;
 }
+/* Configuration de la page */
+:root {
+    --main-blue: #00467f;
+    --side-grey: #f4f4f4;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Le conteneur format A4 */
+.container {
+    width: 210mm;
+    background: white;
+    display: flex;
+    min-height: 297mm;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Colonne de gauche */
+.sidebar {
+    width: 30%;
+    background-color: var(--side-grey);
+    padding: 30px 20px;
+    border-right: 1px solid #ddd;
+}
+
+/* Colonne de droite */
+.main-content {
+    width: 70%;
+    padding: 40px;
+}
+
+/* Style des textes et titres */
+h1 { color: var(--main-blue); font-size: 2.5em; margin: 0; }
+h2 { color: #666; font-weight: 300; margin-bottom: 30px; font-size: 1.2em; }
+h3 { border-bottom: 2px solid var(--main-blue); padding-bottom: 5px; color: var(--main-blue); margin-top: 25px; text-transform: uppercase; font-size: 1.1em; }
+
+/* Justification du texte pour les communications */
+.justified-list p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* Mise en forme des blocs Expérience et Formation */
+.exp, .edu { margin-bottom: 20px; }
+.exp h4, .edu h4 { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 5px; 
+    color: #000; 
+    border-bottom: 1px solid #eee;
+}
+.exp span, .edu span { font-weight: bold; color: var(--main-blue); }
+
+/* Liens */
+a { color: var(--main-blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Suppression des puces par défaut si tu utilises des <ul> */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
