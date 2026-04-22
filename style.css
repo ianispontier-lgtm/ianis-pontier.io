@@ -44,3 +44,6 @@ h3 { border-bottom: 2px solid var(--main-blue); padding-bottom: 5px; }
 span { font-weight: normal; font-size: 0.9em; }
 
 a { color: var(--main-blue); text-decoration: none; }
+p {
+    text-align: justify;
+}
