@@ -1,2 +1,2 @@
-# ianis-pontier.io
+# ianis-pontier
 Curriculum Vitae de Ianis Pontier
